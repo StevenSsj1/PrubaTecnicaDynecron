@@ -1,0 +1,22 @@
+# Core FastAPI dependencies
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+python-multipart
+python-dotenv
+
+# AI/ML dependencies
+google-generativeai
+langchain
+langchain-google-genai
+langchain-community
+sentence-transformers
+langchain-huggingface
+
+# Document processing
+PyPDF2
+pypdf
+
+# Vector database
+faiss-cpu

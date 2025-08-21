@@ -1,0 +1,43 @@
+# Railway ignore - archivos que NO deben subirse a Railway
+
+# Entornos virtuales (CRÍTICO)
+.venv/
+venv/
+.env
+env/
+
+# Directorios de desarrollo
+.git/
+.idea/
+.vscode/
+__pycache__/
+
+# Archivos de configuración local
+docker-compose.yml
+.dockerignore
+
+# Documentación de desarrollo
+README.md
+*.md
+!railway.md
+
+# Datos de desarrollo (mantener estructura vacía)
+data/*.json
+data/*.faiss
+data/*.pkl
+data/vector_db/*
+
+# Logs y archivos temporales
+logs/
+*.log
+tmp/
+temp/
+
+# Coverage y testing
+htmlcov/
+.coverage
+.pytest_cache/
+
+# OS específicos
+.DS_Store
+Thumbs.db

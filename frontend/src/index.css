@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 248 50% 98%;
+    --foreground: 213 27% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 213 27% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 27% 12%;
+
+    --primary: 214 84% 56%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 213 27% 96%;
+    --secondary-foreground: 213 27% 12%;
+
+    --muted: 213 27% 96%;
+    --muted-foreground: 213 10% 54%;
+
+    --accent: 213 27% 96%;
+    --accent-foreground: 213 27% 12%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 213 27% 90%;
+    --input: 213 27% 90%;
+    --ring: 214 84% 56%;
+    
+    /* Custom design tokens */
+    --primary-light: 214 84% 65%;
+    --primary-dark: 214 84% 47%;
+    --success: 142 76% 36%;
+    --warning: 38 92% 50%;
+    --info: 214 84% 56%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-card: linear-gradient(180deg, hsl(var(--card)), hsl(var(--muted)));
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(var(--primary) / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(var(--primary) / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(var(--primary) / 0.1);
+    
+    /* Upload zone */
+    --upload-border: 214 84% 56%;
+    --upload-bg: 214 84% 98%;
+    --upload-active: 214 84% 94%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 213 27% 8%;
+    --foreground: 213 27% 96%;
+
+    --card: 213 27% 10%;
+    --card-foreground: 213 27% 96%;
+
+    --popover: 213 27% 10%;
+    --popover-foreground: 213 27% 96%;
+
+    --primary: 214 84% 56%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 213 27% 16%;
+    --secondary-foreground: 213 27% 96%;
+
+    --muted: 213 27% 16%;
+    --muted-foreground: 213 10% 54%;
+
+    --accent: 213 27% 16%;
+    --accent-foreground: 213 27% 96%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 213 27% 16%;
+    --input: 213 27% 16%;
+    --ring: 214 84% 56%;
+    
+    /* Custom design tokens for dark mode */
+    --primary-light: 214 84% 65%;
+    --primary-dark: 214 84% 47%;
+    --success: 142 76% 36%;
+    --warning: 38 92% 50%;
+    --info: 214 84% 56%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-card: linear-gradient(180deg, hsl(var(--card)), hsl(var(--muted)));
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.1);
+    
+    /* Upload zone */
+    --upload-border: 214 84% 56%;
+    --upload-bg: 213 27% 12%;
+    --upload-active: 213 27% 14%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
