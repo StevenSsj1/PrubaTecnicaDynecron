@@ -32,6 +32,7 @@ proyecto/
 - **API Key de Google Gemini**
 
 ### ⚡ Ejecución Rápida con Docker
+Para el backend, el frontend debera ser levatando dentro de la carpeta frontend con el comando npm run dev.
 
 ```bash
 # 1. Configurar variables de entorno
